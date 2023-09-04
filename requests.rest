@@ -1,0 +1,15 @@
+GET http://localhost:3001/todos
+###
+POST http://localhost:3001/todo/new
+Content-Type:application/json
+
+{
+    "text": "5"
+}
+
+###
+DELETE http://localhost:3001/todo/delete/64e7fdea2e0bfe88f6d6fcfc
+###
+GET http://localhost:3001/todo/complete/64e7eb7f5667381b3c7b12a7
+###
+GET http://localhost:3001/check-session
