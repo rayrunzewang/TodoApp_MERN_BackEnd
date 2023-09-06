@@ -12,4 +12,17 @@ DELETE http://localhost:3001/todo/delete/64e7fdea2e0bfe88f6d6fcfc
 ###
 GET http://localhost:3001/todo/complete/64e7eb7f5667381b3c7b12a7
 ###
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+  "username": "username",
+  "password": "password"
+}
+###
 GET http://localhost:3001/check-session
+Content-Type: application/json
+
+###
+POST http://localhost:3001/logout
+Content-Type: application/json
